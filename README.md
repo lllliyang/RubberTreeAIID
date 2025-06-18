@@ -18,27 +18,29 @@ It provides a complete pipeline from image acquisition and processing to automat
 ---
 
 ## 📂 Project Structure
+
 '''
 RubberTreeAIID/
 ├── backend/ # Flask backend server
 │ ├── app.py # Main API entry
 │ ├── config.py # Configuration settings
 │ ├── input/ # Uploaded DOM/DSM files
-│ ├── output/ # Detection results, coordinates, image tiles
-│ ├── models/ # Model loading and inference logic
-│ │ └── weights/ # Trained YOLOv11 weights (e.g., best.pt)
-│ ├── utils/ # Core functional modules:
-│ │ ├── inference/ # DOM tiling, image inference
-│ │ ├── transform/ # Affine geolocation
-│ │ ├── qrcode/ # QR-code generation and encoding
+│ ├── output/ # Detection results and tiles
+│ ├── models/ # Model loading and inference
+│ │ └── weights/ # Trained YOLOv11 weights (best.pt)
+│ ├── utils/ # Core functional modules
+│ │ ├── inference/ # Image tiling and model inference
+│ │ ├── transform/ # Affine geolocation processing
+│ │ ├── qrcode/ # QR code generation
 │ │ ├── database/ # MySQL interface
 │ │ └── ultralytics/ # Custom YOLOv11 with Addmodule
-├── frontend/ # Vue-based frontend
-│ ├── src/ # Form UI, QR-code view, tree info editing
-│ └── vue.config.js # Frontend config
-├── requirements.txt # Python dependencies
-└── README.md
+├── frontend/ # Vue-based frontend interface
+│ ├── src/ # UI components and views
+│ └── vue.config.js # Vue project configuration
+├── requirements.txt # Python dependency list
+└── README.md # Project documentation
 '''
+
 ---
 
 ## 🔧 Installation & Setup
