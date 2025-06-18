@@ -18,7 +18,7 @@ It provides a complete pipeline from image acquisition and processing to automat
 ---
 
 ## 📂 Project Structure
-
+'''
 RubberTreeAIID/
 ├── backend/ # Flask backend server
 │ ├── app.py # Main API entry
@@ -38,11 +38,7 @@ RubberTreeAIID/
 │ └── vue.config.js # Frontend config
 ├── requirements.txt # Python dependencies
 └── README.md
-
-yaml
-Copy
-Edit
-
+'''
 ---
 
 ## 🔧 Installation & Setup
